@@ -6,7 +6,7 @@
    * Handover secrets manually /email to the application owners\
    * Secrets have no expiry\
     
-**Why** - MS Security recommendation is to rotate secrets, every 90 days
+**Why** - MS recommendation is to rotate secrets, every 90 days
 
 **How** - Rotate secrets using Azure Key Vault to rotate secrets.
           Other available  options HashiCorp vault 
