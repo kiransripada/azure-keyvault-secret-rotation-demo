@@ -1,6 +1,6 @@
 ## Azure Key Vault - Rotate Secrets using Function App Event Handler
 
-**Usecase** - Rotate( Storage Account) Secrets
+**Usecase** - Rotate( Storage Account) Secrets\
 **Current State** 
    * Storage Account (ksripadastorageaccount)  is being used by multiple applications  for  product data feed\
    * Handover secrets manually /email to the application owners\
@@ -80,8 +80,8 @@ Rotate & retrieve secrets using  Azure KV.
 
 
 
-References #
-https://github.com/Azure-Samples/KeyVault-Rotation-StorageAccountKey-PowerShell.git
-https://dev.to/cheahengsoon/configure-and-manage-azure-key-vault-3foj
+References # \
+https://github.com/Azure-Samples/KeyVault-Rotation-StorageAccountKey-PowerShell.git \
+https://dev.to/cheahengsoon/configure-and-manage-azure-key-vault-3foj \
 https://github.com/Azure-Samples/event-grid-node-publish-consume-events
 
