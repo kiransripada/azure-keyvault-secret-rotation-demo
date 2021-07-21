@@ -1,7 +1,8 @@
 ## Azure Key Vault - Rotate Secrets using Function App Event Handler
 
-**Current State** - Storage Account (ksripadastorageaccount)  is being used by multiple applications  for  product data feed
-
+**Usecase** - Rotate( Storage Account) Secrets
+**Current State** 
+   * Storage Account (ksripadastorageaccount)  is being used by multiple applications  for  product data feed\
    * Handover secrets manually /email to the application owners\
    * Secrets have no expiry\
     
