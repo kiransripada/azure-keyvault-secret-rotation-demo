@@ -54,6 +54,28 @@ Rotate & retrieve secrets using  Azure KV.
             The Storage Account Key Operator Service role is assigned to the function app so it can access storage account access keys
             A key rotation function with an event trigger and an HTTP trigger (on-demand rotation)
             An Event Grid event subscription for the SecretNearExpiry eve
+### 3.Access Secrets 
+    Enable a system-assigned managed identity for the application
+    Register the application with your Azure AD tenant
+ Option #2
+  Applications can   access secrets using service principal
+    ![image](https://user-images.githubusercontent.com/8209932/126428991-fcc33b1a-ed1b-4341-ab3c-afd88518c719.png)
+
+  Applications can   access secrets using service principal
+    ![image](https://user-images.githubusercontent.com/8209932/126429308-695d3043-e7d5-45e2-b679-dc4878297954.png)
+    
+### 4. Notify & Alert 
+   notify-webhook copy![image](https://user-images.githubusercontent.com/8209932/126429574-8502fae6-2b41-474f-bce9-b559eb4b8e59.png)
+
+### 5. Learnings
+  Intermittent Errors / Exceptions encountered during POC
+  
+ 1. [**Error**] *Singleton lock renewal failed for blob 'ksripada-storagekey-rotation-fna/host' with error code 409:LeaseIdMismatchWithLeaseOperation.*\
+            QuickFix:-  Restart Function app event handler
+      
+  2. [**Error**]*Azure.KeyVault.Models.KeyVaultErrorException: Operation returned an invalid status code 'Forbidden'at           Microsoft.Azure.KeyVault.KeyVaultClient.GetSecretWithHttpMessagesAsy*\
+            QuickFix:-  Validate permissions to function app .  the Restart function app event handler 
+
 
 
 
