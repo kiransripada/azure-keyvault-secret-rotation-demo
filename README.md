@@ -80,3 +80,8 @@ Rotate & retrieve secrets using  Azure KV.
 
 
 
+References #
+https://github.com/Azure-Samples/KeyVault-Rotation-StorageAccountKey-PowerShell.git
+https://dev.to/cheahengsoon/configure-and-manage-azure-key-vault-3foj
+https://github.com/Azure-Samples/event-grid-node-publish-consume-events
+
