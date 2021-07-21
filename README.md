@@ -2,25 +2,24 @@
 
 **Usecase** - Rotate( Storage Account) Secrets\
 **Current State** 
-   * Storage Account (ksripadastorageaccount)  is being used by multiple applications  for  product data feed\
-   * Handover secrets manually /email to the application owners\
-   * Secrets have no expiry\
+   * Storage Account (ksripadastorageaccount)  is being used by multiple applications/processes.
+   * Handover secrets manually /email to the applications /processes owners.
+   * Secrets have no expiry.
     
 **Why** - MS recommendation is to rotate secrets, every 90 days
 
-**How** - Rotate secrets using Azure Key Vault to rotate secrets.
+**How** - Rotate secrets using Azure Key Vault .\
           Other available  options HashiCorp vault 
  
 **Demo** - 
 
-Rotate & retrieve secrets using  Azure KV.   
+  * Rotate & retrieve secrets using  Azure KV.   
 
 **Future State**
   * Ability to rotate secrets  on a 90 day frequency
   * The ability for applications to retrieve secrets instead of handing secrets to owners
 
 **Demo Highlights** - 
-
 
  1. Create secret in AKV
       acces_keys for ksripadastorageaccount  
@@ -33,8 +32,8 @@ Rotate & retrieve secrets using  Azure KV.
 1. Learnings / Next steps
 
 #### 1.Create a secret in AKV
-  Azure Key Vault is a cloud service for securely storing and accessing secrets.\
-  A secret is anything that you want to tightly control access to, such as API keys, passwords, certificates, or cryptographic key \
+   Azure Key Vault is a cloud service for securely storing and accessing secrets.\
+   A secret is anything that you want to tightly control access to, such as API keys, passwords, certificates, or cryptographic key \
       ![image](https://user-images.githubusercontent.com/8209932/126427470-e40735d2-6e02-44c2-a7b1-3419a1528314.png)\
       ![image](https://user-images.githubusercontent.com/8209932/126427997-b0b63c40-0101-41ec-89fc-36f19adb580c.png)
 
@@ -56,8 +55,8 @@ Rotate & retrieve secrets using  Azure KV.
             A key rotation function with an event trigger and an HTTP trigger (on-demand rotation)
             An Event Grid event subscription for the SecretNearExpiry eve
 #### 3.Access Secrets 
-    Enable a system-assigned managed identity for the application
-    Register the application with your Azure AD tenant
+   Enable a system-assigned managed identity for the application. \
+   Register the application with your Azure AD tenant. \
  Option #2
   Applications can   access secrets using service principal
     ![image](https://user-images.githubusercontent.com/8209932/126428991-fcc33b1a-ed1b-4341-ab3c-afd88518c719.png)
